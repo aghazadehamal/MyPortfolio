@@ -29,7 +29,7 @@ function SocialMedia() {
           <FaLinkedinIn className="social-icon" />
         </a>
       </li>
-      <li className="social-icons">
+      {/* <li className="social-icons">
         <a
           href="https://www.instagram.com/aghazadehamal/"
           target="_blank"
@@ -38,7 +38,7 @@ function SocialMedia() {
         >
           <AiFillInstagram className="social-icon" />
         </a>
-      </li>
+      </li> */}
       <li className="social-icons">
         <a
           href="mailto:aghazadehamal@gmail.com"
