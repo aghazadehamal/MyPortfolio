@@ -81,7 +81,7 @@ export const SKILLS = [
   // { name: "React-Native", initialRating: 4 },
   { name: "JavaScript", initialRating: 4 },
   { name: "Redux", initialRating: 4 },
-  { name: "Shopify/Reactjs", initialRating: 4 },
+  { name: "Reactjs", initialRating: 4 },
   { name: "Vite", initialRating: 4 },
   { name: "Git", initialRating: 4 },
   { name: "TailwindCSS", initialRating: 4 },

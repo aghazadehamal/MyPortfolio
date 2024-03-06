@@ -36,10 +36,10 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="http://www.logicstime.com/" target="_blank">
+        {/* <Navbar.Brand href="http://www.logicstime.com/" target="_blank">
           <MdDeveloperMode style={{ marginBottom: "2px" }} /> Logicstime.com
-        </Navbar.Brand>
-        <Navbar.Toggle
+        </Navbar.Brand> */}
+        <Navbar.Toggle 
           aria-controls="responsive-navbar-nav"
           onClick={() => {
             updateExpanded(expand ? false : "expanded");
@@ -49,8 +49,8 @@ function NavBar() {
           <span></span>
           <span></span>
         </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto" defaultActiveKey="#home">
+        <Navbar.Collapse style={{justifyContent: "center"}} id="responsive-navbar-nav">
+          <Nav  defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
@@ -91,13 +91,13 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
+              {/* <Nav.Link
                 href="http://www.logicstime.com/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
