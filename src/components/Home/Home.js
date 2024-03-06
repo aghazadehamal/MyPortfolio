@@ -20,14 +20,13 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> Sunil Yadav</strong>
+                <strong className="main-name"> Amal Aghazada</strong>
               </h1>
 
               <p className="heading-description blockquote">
-                I am passionate about using Javascript and Animation Libraries
-                to create awesome user experiences. With over five years of
-                experience developing web applications using the latest
-                front-end and back-end technologies.
+              I'm a Frontend Developer with over a year of experience, specializing in creating interactive websites and online platforms, including a news page and driving lessons portal. My work focuses on using the latest technologies to enhance user experience. Through my projects, I've developed a deep understanding of the importance of user-centric design and am committed to delivering innovative solutions that meet users' needs. I'm passionate about keeping up with industry trends and continuously improving my skills to contribute positively to the digital world.
+
+
               </p>
 
               <div className="heading-type">
@@ -36,7 +35,8 @@ function Home() {
             </Col>
 
             <Col md={5}>
-              <img src={myImg} className="profile-pic" alt="avatar" />
+            <img className="profile-pic" src={`${process.env.PUBLIC_URL}/images/eyml.jpeg`} alt="Açıklama" />
+
             </Col>
           </Row>
         </Container>

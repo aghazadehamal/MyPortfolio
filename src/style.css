@@ -791,9 +791,9 @@ html {
 .profile-pic {
   border-radius: 50%;
   height: 70%;
-  width: 65%;
-  margin-top: 12%;
-  margin-left: 25%;
+  width: 85%;
+  margin-top: 22%;
+  margin-left: 15%;
 }
 
 @media (max-width: 767px) {

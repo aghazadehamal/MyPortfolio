@@ -6,34 +6,26 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Sunil Yadav </span>
-            from <span className="purple"> Lucknow, India.</span>
-            <br />
-            Software Engineer who loves to transform ideas into reality using
-            code.
-            <br />
-            Motivated designer and developer with experience creating
-            custom websites with ReactJs, JavaScript, HTML5, CSS3. Shopify app using ReactJs, Javascript, Polaris, Graphql, nodejs, Koajs
-            and Mobile App using React-native.
-            <br />
-            Apart from coding, some other activities that I love to do!
-          </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Watching Movies
-            </li>
-          </ul>
-        </blockquote>
+  <p style={{ textAlign: "justify" }}>
+    Hi Everyone, I am <span className="purple">Amal </span>
+    from <span className="purple">Baku, Azerbaijan.</span>
+    <br />
+    A Frontend Developer passionate about transforming ideas into reality using code.
+    <br />
+    Skilled in creating custom websites with ReactJs, JavaScript, HTML5, CSS3, and have worked on projects like a news website and an online driving lessons platform.
+    <br />
+    Apart from coding, there are other activities that I love to do!
+  </p>
+  <ul>
+    <li className="about-activity">
+      <ImPointRight /> Travelling
+    </li>
+    <li className="about-activity">
+      <ImPointRight /> Playing Chess
+    </li>
+  </ul>
+</blockquote>
+
       </Card.Body>
     </Card>
   );
