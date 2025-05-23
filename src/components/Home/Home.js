@@ -8,9 +8,9 @@ function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        <Container className="home-content">
+        <Container style={{textAlign:"center"}} className="home-content">
           <Row>
-            <Col md={6} className="home-header">
+            <Col md={12} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
@@ -34,10 +34,10 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={5}>
+            {/* <Col md={5}>
             <img className="profile-pic" src={`${process.env.PUBLIC_URL}/images/eyml.jpeg`} alt="Açıklama" />
 
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </Container>
