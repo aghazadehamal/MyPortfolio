@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-// import Particle from "../Particle";
-import pdf from "../../Assets/cvAmalSecond.pdf"; // Dosya yolu güncellendi
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+
+import pdf1 from "../../Assets/cvAmalSecond.pdf";
+import pdf2 from "../../Assets/cvEnglish.pdf";
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
@@ -15,23 +17,47 @@ function ResumeNew() {
     setWidth(window.innerWidth);
   }, []);
 
-  return (
-    <div>
-      <Container fluid className="resume-section">
-        <Row className="resume">
-          <Document file={pdf}>
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row>
+  
+  const scale = width > 786 ? 1.4 : 0.6;
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button variant="primary" href={pdf} target="_blank" className="download-button">
+  return (
+    <Container fluid className="resume-section">
+      <Row className="resume" style={{ justifyContent: "center", gap: "40px" }}>
+        {/* Birinci CV */}
+        <Col md={6} sm={12} style={{ textAlign: "center" }}>
+          <Document file={pdf1}>
+            <Page pageNumber={1} scale={scale} />
+          </Document>
+          <Button
+            variant="primary"
+            href={pdf1}
+            target="_blank"
+            className="download-button"
+            style={{ marginTop: "10px" }}
+          >
             <AiOutlineDownload />
-            &nbsp;Download My CV
+            &nbsp;Download CV 
           </Button>
-        </Row>
-      </Container>
-    </div>
+        </Col>
+
+        {/* İkinci CV */}
+        <Col md={6} sm={12} style={{ textAlign: "center" }}>
+          <Document file={pdf2}>
+            <Page pageNumber={1} scale={scale} />
+          </Document>
+          <Button
+            variant="secondary"
+            href={pdf2}
+            target="_blank"
+            className="download-button"
+            style={{ marginTop: "10px" }}
+          >
+            <AiOutlineDownload />
+            &nbsp;Download CV 
+          </Button>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
