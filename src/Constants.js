@@ -9,7 +9,7 @@ import TECHSPEC from "./Assets/Projects/techspec.png";
 import TRAVELWELL from "./Assets/Projects/travelwell.png";
 
 export const PROJECTS = [
-  {
+    {
     image: `${process.env.PUBLIC_URL}/images/crocusoft.jpeg`,
     name: "Official Website",
     technologyUsed: "Next.js, Tailwind CSS",
@@ -29,6 +29,13 @@ export const PROJECTS = [
     technologyUsed: "ReactJs",
     description: "EduRive is an interactive and intuitive learning platform created for individuals preparing for driving license exams. It offers theoretical materials, quizzes, video lessons, and simulations. Users can progress at their own pace and track their performance. The platform serves both beginners and those seeking to reinforce their knowledge, and is fully optimized for both mobile and desktop devices.",
     url: "https://edurive.netlify.app"
+  },
+  {
+    image: `${process.env.PUBLIC_URL}/images/nitroaze.png`,
+    name: "NitroAze",
+    technologyUsed: "Node.js, Express.js, PostgreSQL, Multer, React",
+    description: "NitroAze is a fullstack car marketplace platform allowing users to register, log in, and manage car listings. Built with a secure backend using Node.js, Express, and PostgreSQL, it supports image uploads through Multer and JWT-based authentication. The frontend, developed with Next.js, offers a smooth and responsive user experience, enabling users to add, view, edit, and delete listings easily. The project emphasizes clean design and real-world functionality.",
+    url: "https://nitroaze.netlify.app"
   }
   ,
 
