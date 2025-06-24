@@ -7,6 +7,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 
 import pdf1 from "../../Assets/cvAmalSecond.pdf";
 import pdf2 from "../../Assets/cvEnglish.pdf";
+import pdf3 from "../../Assets/cvFullStack.pdf";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
@@ -24,6 +25,23 @@ function ResumeNew() {
     <Container fluid className="resume-section">
       <Row className="resume" style={{ justifyContent: "center", gap: "40px" }}>
         {/* Birinci CV */}
+        <Col md={6} sm={12} style={{ textAlign: "center" }}>
+          <Document file={pdf3}>
+            <Page pageNumber={1} scale={scale} />
+          </Document>
+          <Button
+            variant="secondary"
+            href={pdf2}
+            target="_blank"
+            className="download-button"
+            style={{ marginTop: "10px" }}
+          >
+            <AiOutlineDownload />
+            &nbsp;Download CV 
+          </Button>
+        </Col>
+
+        
         <Col md={6} sm={12} style={{ textAlign: "center" }}>
           <Document file={pdf1}>
             <Page pageNumber={1} scale={scale} />
@@ -56,6 +74,8 @@ function ResumeNew() {
             &nbsp;Download CV 
           </Button>
         </Col>
+
+         
       </Row>
     </Container>
   );
